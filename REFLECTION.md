@@ -2,7 +2,7 @@
  
 1. What is the difference between building a UI imperatively (plain DOM code) and 
 declaratively (React)?
-  - imperative UI building (plain DOM code) requires you to specify how to achieve a result step-by-step,
+  - Imperative UI building (plain DOM code) requires you to specify how to achieve a result step-by-step,
     whereas declarative UI building (React) lets you specify what the UI should look like based on your current state.
  
 2. Why must a component name start with a capital letter?
