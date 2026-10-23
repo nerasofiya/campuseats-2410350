@@ -13,7 +13,7 @@ function MenuItemCard({ item, onAdd }) {
         disabled={!item.available}
         onClick={() => onAdd(item)}
       >
-        {item.available ? "Add to cart" : "Sold out"}
+        Add to Cart
       </button>
     </article>
   );
