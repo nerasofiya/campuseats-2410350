@@ -1,4 +1,5 @@
 import MenuItemCard from "./MenuItemCard.jsx";
+import MenuSearch from "./MenuSearch.jsx";
 
 function MenuList({ items, onAdd }) {
   if (items.length === 0) {

@@ -12,7 +12,7 @@
         "description": "Grilled chicken meat in a flatbread",
         "price": 6,
         "category": "Sandwiches",
-        "popular": true
+        "available": true
       },
       {
         "id": "2410350-s-2",
@@ -20,7 +20,7 @@
         "description": "Grilled beef meat in a flatbread",
         "price": 7,
         "category": "Sandwiches",
-        "popular": true
+        "available": true
       },
       {
         "id": "2410350-s-3",
@@ -28,7 +28,7 @@
         "description": "Crispy chicken wrap with special sauce",
         "price": 8,
         "category": "Sandwiches",
-        "popular": true
+        "available": true
       },
       {
         "id": "2410350-b-1",
@@ -36,7 +36,7 @@
         "description": "Refreshing mint and lemonade blend",
         "price": 3,
         "category": "Drinks",
-        "popular": true
+        "available": true
       },
       {
         "id": "2410350-b-2",
@@ -44,7 +44,7 @@
         "description": "Creamy yogurt drink with fruit syrup",
         "price": 4,
         "category": "Drinks",
-        "popular": true
+        "available": true
       },
       {
         "id": "2410350-d-1",
@@ -52,7 +52,7 @@
         "description": "Classic Turkish dessert with nuts and honey",
         "price": 8,
         "category": "Desserts",
-        "popular": true
+        "available": true
       },
       {
         "id": "2410350-d-2",
@@ -60,7 +60,7 @@
         "description": "Crispy pastry filled with cheese and soaked in sweet syrup",
         "price": 8,
         "category": "Desserts",
-        "popular": true
+        "available": true
       },
       {
         "id": "2410350-d-3",
@@ -68,7 +68,7 @@
         "description": "Smooth milk pudding infused with subtle rosewater, garnished with crushed nuts and a drizzle of honey.",
         "price": 5,
         "category": "Desserts",
-        "popular": true
+        "available": true
       }
     ]
   },
@@ -84,64 +84,55 @@
         "name": "Spicy Tonkotsu Ramen",
         "price": 15.0,
         "category": "Ramen",
-        "popular": true,
-        "spice": 4
+        "available": true
       },
       {
         "id": "2416464-m2",
         "name": "Shoyu Ramen",
         "price": 13.0,
         "category": "Ramen",
-        "popular": true,
-        "spice": 1
+        "available": true
       },
       {
         "id": "2416464-m3",
         "name": "Miso Ramen",
         "price": 14.0,
-        "category": "Ramen",
-        "popular": false,
-        "spice": 2
+        "category": "Ramen"
       },
       {
         "id": "2416464-m4",
         "name": "Gyoza (5 pcs)",
         "price": 6.0,
         "category": "Sides",
-        "popular": true,
-        "spice": 1
+        "available": true
       },
       {
         "id": "2416464-m5",
         "name": "Karaage Chicken",
         "price": 7.5,
         "category": "Sides",
-        "popular": true,
-        "spice": 1
+        "available": true
       },
       {
         "id": "2416464-m6",
         "name": "Matcha Strawberry",
         "price": 5.5,
         "category": "Drinks",
-        "popular": true,
-        "spice": 1
+        "available": true
       },
       {
         "id": "2416464-m7",
         "name": "Japanese Lemonade",
         "price": 4.0,
         "category": "Drinks",
-        "popular": false,
-        "spice": 1
+        "available": true
       },
       {
         "id": "2416464-m8",
         "name": "Green Tea",
         "price": 2.0,
         "category": "Drinks",
-        "popular": false,
-        "spice": 1
+        "available": true
       }
     ]
   },
@@ -158,8 +149,7 @@
         "description": "Creamy baked cheesecake topped with strawberries",
         "price": 9.0,
         "category": "Cakes",
-        "available": true,
-        "popular": true
+        "available": true
       },
       {
         "id": "2415246-m2",
@@ -167,8 +157,7 @@
         "description": "Moist chocolate sponge layered with fudge frosting",
         "price": 8.0,
         "category": "Cakes",
-        "available": true,
-        "popular": true
+        "available": true
       },
       {
         "id": "2415246-m3",
@@ -176,8 +165,7 @@
         "description": "Delicate thin layers of matcha crepes with fresh cream",
         "price": 10.0,
         "category": "Cakes",
-        "available": false,
-        "popular": true
+        "available": false
       },
       {
         "id": "2415246-m4",
@@ -185,8 +173,7 @@
         "description": "Smooth chilled pudding made with fresh mango",
         "price": 5.0,
         "category": "Desserts",
-        "available": true,
-        "popular": false
+        "available": true
       },
       {
         "id": "2415246-m5",
@@ -194,8 +181,7 @@
         "description": "Warm dough swirled with cinnamon and topped with icing",
         "price": 5.5,
         "category": "Pastries",
-        "available": true,
-        "popular": true
+        "available": true
       },
       {
         "id": "2415246-m6",
@@ -203,8 +189,7 @@
         "description": "Flaky, buttery French-style golden pastry",
         "price": 4.5,
         "category": "Pastries",
-        "available": true,
-        "popular": false
+        "available": true
       },
       {
         "id": "2415246-m7",
@@ -212,8 +197,7 @@
         "description": "Rich Belgian chocolate with steamed milk and marshmallows",
         "price": 6.5,
         "category": "Drinks",
-        "available": false,
-        "popular": false
+        "available": false
       },
       {
         "id": "2415246-m8",
@@ -221,8 +205,7 @@
         "description": "Blended fresh mangoes with yogurt and honey",
         "price": 8.0,
         "category": "Drinks",
-        "available": true,
-        "popular": false
+        "available": true
       }
     ]
   }

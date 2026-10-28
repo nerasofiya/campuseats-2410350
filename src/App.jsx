@@ -9,6 +9,7 @@ function App() {
   // Fetched data: one piece of state for each situation
   const [vendors, setVendors] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
   const [error, setError] = useState(null);
   const [reloadKey, setReloadKey] = useState(0); // bump it to fetch again
 
@@ -83,6 +84,11 @@ function App() {
   const cartCount = cart.reduce((sum, line) => sum + line.qty, 0);
   const selectedVendor = vendors.find((v) => v.id === selectedVendorId);
 
+  const currentMenu = selectedVendor?.menu || [];
+  const filteredMenu = currentMenu.filter((item) =>
+    item.name.toLowerCase().includes(searchTerm.toLowerCase()),
+  );
+
   let content;
   if (view === "cart") {
     content = (
@@ -131,7 +137,18 @@ function App() {
           ))}
         </div>
         {selectedVendor && (
-          <MenuList items={selectedVendor.menu} onAdd={handleAddToCart} />
+          <>
+            <div className="search-box" style={{ marginBottom: "1rem" }}>
+              <input
+                type="text"
+                placeholder="Search menu items..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="input"
+              />
+            </div>
+            <MenuList items={filteredMenu} onAdd={handleAddToCart} />
+          </>
         )}
       </>
     );
