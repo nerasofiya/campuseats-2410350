@@ -18,3 +18,15 @@ One thing the AI got wrong and how I fixed it:
 The AI's mistake: The AI gave the wrong code so it didn't work and wasn't loading anything onto the webpage, specifically leaving out res.json() in the fetch logic which left the shop data completely empty.
 
 How I fixed it: Updated the fetch implementation in App.jsx to properly include .then(res => res.json()) so the food shops could finally load and appear on the webpage. (Line 26-34)
+
+## Week 4 - Tool(s): Google Gemini.
+
+What I asked for: Help with search filters in VendorPage and fixing app crashes and warning messages in OrdersPage.
+
+What I kept, changed or rejected, and why:
+
+Kept: Safety checks (like [] defaults) so the app doesn't crash when lists are empty.
+
+Changed: Cleaned up how lists are mapped out to fit React rules.
+
+One thing the AI got wrong and how I fixed it: The AI use index for a list key without setting it up in the .map() function first, which caused an error. I fixed it by updating the code from orders.map((order)) to include index in the map parameters: orders.map((order, index) => ...) in OrdersPage.jsx code.
