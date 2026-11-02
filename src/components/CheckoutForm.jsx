@@ -2,11 +2,14 @@ import { useState } from "react";
 
 const MAHALLAHS = [
   "Ali",
+  "Asma",
+  "Sumayyah",
   "Aminah",
   "Faruq",
   "Asiah",
   "Bilal",
   "Hafsa",
+  "Halimah",
   "Uthman",
   "Zubair",
 ];

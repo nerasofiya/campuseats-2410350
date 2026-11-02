@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router";
+import { useNavigate, Link } from "react-router-dom";
 import { useCart } from "../hooks/useCart.js";
 import CartItem from "../components/CartItem.jsx";
 import CheckoutForm from "../components/CheckoutForm.jsx";
@@ -17,6 +17,9 @@ function CartPage() {
       <section>
         <h2 className="section-title">Your cart</h2>
         <p className="muted">Your cart is empty. Pick something from a menu.</p>
+        <p>
+          <Link to="/">← Back to vendors</Link>
+        </p>
       </section>
     );
   }

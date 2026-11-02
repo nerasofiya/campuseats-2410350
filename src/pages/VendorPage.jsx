@@ -1,4 +1,4 @@
-import { Link, useParams, useSearchParams } from "react-router";
+import { Link, useParams, useSearchParams } from "react-router-dom";
 import { useVendors } from "../hooks/useVendors.js";
 import MenuList from "../components/MenuList.jsx";
 import { Loading, ErrorMessage } from "../components/Status.jsx";
@@ -13,7 +13,7 @@ function VendorPage() {
   if (loading) return <Loading />;
   if (error) return <ErrorMessage message={error} onRetry={reload} />;
 
-  const vendor = vendors.find((v) => v.id === id);
+  const vendor = vendors.find((v) => String(id).startsWith(String(v.id)));
 
   if (!vendor) {
     return (
