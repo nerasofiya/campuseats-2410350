@@ -31,3 +31,17 @@ Kept: Safety checks (like [] defaults) so the app doesn't crash when lists are e
 Changed: Cleaned up how lists are mapped out to fit React rules.
 
 One thing the AI got wrong and how I fixed it: The AI use index for a list key without setting it up in the .map() function first, which caused an error. I fixed it by updating the code from orders.map((order)) to include index in the map parameters: orders.map((order, index) => ...) in OrdersPage.jsx code.
+
+## Week 4- Tool(s): Google Gemini.
+
+What I asked for: Help fixing blank screens and router context crashes (useLocation, useNavigate, useRoutes) when clicking vendor cards, navigating to the cart, or refreshing the page.
+
+What I kept, changed, or rejected:
+
+Kept: Kept <BrowserRouter> at the top-level entry point so the entire application shares the same navigation context.
+
+Changed: Standardized every component and page (main.jsx, App.jsx, Layout.jsx, Header.jsx, VendorPage.jsx, and CartPage.jsx) to import router hooks and components exclusively from "react-router-dom".
+
+Rejected: The AI suggested mixing imports between "react-router" and "react-router-dom"
+
+One thing the AI got wrong and how I fixed it: The AI initially suggested switching imports back to "react-router", which caused component-level crashes like useLocation() in Header.jsx and useNavigate() in CartPage.jsx. I fixed it by editing every file in the project to just use "react-router-dom".
