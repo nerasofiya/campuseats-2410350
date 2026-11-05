@@ -2,11 +2,12 @@ import { Link, useParams, useSearchParams } from "react-router-dom";
 import { useVendors } from "../hooks/useVendors.js";
 import MenuList from "../components/MenuList.jsx";
 import { Loading, ErrorMessage } from "../components/Status.jsx";
+import MenuSearch from "../components/MenuSearch.jsx";
 
 function VendorPage() {
-  const { id } = useParams();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const searchTerm = searchParams.get("search") || "";
+  const { id } = useParams(); //Extracts the vendor id from the URL route
+  const [searchParams] = useSearchParams(); //Gets the query string parameters from the URL along with a function to update them
+  const searchTerm = searchParams.get("q") || "";
 
   const { vendors, loading, error, reload } = useVendors();
 
@@ -39,18 +40,7 @@ function VendorPage() {
       <p className="muted">
         {vendor.location} · {vendor.openHours}
       </p>
-      <div className="search-box" style={{ marginBottom: "1rem" }}>
-        <input
-          type="text"
-          placeholder="Search menu items..."
-          value={searchTerm}
-          onChange={(e) => {
-            const value = e.target.value;
-            setSearchParams(value ? { search: value } : {});
-          }}
-          className="input"
-        />
-      </div>
+      <MenuSearch />
 
       <MenuList items={filteredMenu} />
     </section>
